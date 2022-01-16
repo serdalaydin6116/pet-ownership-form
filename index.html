@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Sorts+Mill+Goudy:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Evcil Hayvan Sahiplenme Formu</title>
+  </head>
+  <body>
+    <div id="container">
+        <header id="header">
+          <h1 id="title">İnsanlığımızın göstergesi <span>Hayvan Sevgisidir..</span></h1>
+          <h3 id="description">
+            Bir dost edinecek kişiyi yakından tanımak isteriz.
+          </h3>
+        </header>
+        
+        <section id="survey_form_container">
+            <form action="result.html" method="get">
+                <fieldset class="field">
+                <legend style="font-size: 20px; font-weight: 900; color: black;">Kişisel Bilgiler</legend>
+                    <div class="input-box">
+                        <label for="name">Adınız</label>
+                        <br />
+                        <input
+                        type="text"
+                        name="Adı"
+                        id="name"
+                        placeholder="Adınızı giriniz..."
+                    />
+                    </div>
+                    <div class="input-box">
+                        <label for="surname">Soyadınız</label>
+                        <br />
+                        <input
+                        type="text"
+                        name="Soyadı"
+                        id="surname"
+                        placeholder="Soyadınızı giriniz..."
+                    />
+                    </div>
+                    <div class="input-box">
+                        <label for="D.O.B.">Doğum tarihiniz</label>
+                        <br />
+                        <input
+                        type="date"
+                        name="Doğum tarihi"
+                        id="D.O.B."
+                        placeholder="23.08.1985"
+                    />
+                    </div>
+                    <div class="input-box">
+                        <label for="age">Yaşınız</label>
+                        <br />
+                        <input
+                        type="number"
+                        name="Yaşı"
+                        id="age"
+                        placeholder="35"
+                    />
+                    </div>
+                    <div class="input-box">
+                        <label for="marital status">Medeni haliniz </label>
+                        <br>
+                        <input type="radio" name="Medeni hali" id="gender_1" value="Erkek" />
+                        <label for="gender_1">Erkek</label>
+                        <input type="radio" name="Medeni hali" id="gender_2" value="Bayan" />
+                        <label for="gender_2">Bayan</label>
+                    </div>
+                    <div class="input-box">
+                        <label for="child">Çocuk Durumunuz </label>
+                        <br>
+                        <select name="Çocuk durumu" id="child">
+                          <option value="">Çocuğum yoktur.</option>
+                          <option value="" selected>-1- cocuk sahibiyim</option>
+                          <option value="">-2- cocuk sahibiyim.</option>
+                          <option value="">-3- cocuk sahibiyim.</option>
+                          <option value="">-4+- cocuk sahibiyim.</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="iş">İş durumunuz </label>
+                        <br>
+                        <input type="radio" name="İş durumu" id="condition-1" value="Çalışıyorum" />
+                        <label for="condition-1">Çalışıyorum</label>
+                        <input type="radio" name="İş durumu" id="condition-2" value="ÇalışMIyorum" />
+                        <label for="condition-2">ÇalışMIyorum</label>
+                    </div>
+                    <div class="input-box">
+                        <label for="square">Aylık kazancınız</label>
+                        <br>
+                        <input type="range" name="Aylık kazancı" id="salary" min="5000" max="20000" step= "1000" />
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset class="field">
+                    <legend style="font-size: 20px; font-weight: 900; color: black;">İletişim ve Konut Bilgileri</legend>
+                    <div class="input-box">
+                        <label for="adres">İkamet Adresiniz</label>
+                        <br>
+                        <input type="text" name="Adresi" id="adres" placeholder="Adresi buraya yazınız..."/>
+                    </div>
+                    <div class="input-box">
+                        <label for="phone">Telefon numaranız (Mobil)</label>
+                        <br>
+                        <input type="tel" name="Telefon numarası" id="phone" required value="+90" maxlength="10"/>
+                    </div>
+                    <div class="input-box">
+                        <label for="house">Yaşanılan Evin Niteliği </label>
+                        <br>
+                        <select name="Evin niteliği" id="house">
+                          <option value="sahibi">Ev sahibiyim</option>
+                          <option value="kiracı" selected>Kiracıyım</option>
+                          <option value="Ailesi ile birlikte">Ebeveynlerimle birlikte yaşıyorum</option>
+                          <option value="Diğer">Diğer</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="type">Yaşanılan Evin Tipi </label>
+                        <br>
+                        <select name="Evin tipi" id="type">
+                             <option value="Şehir-müstakil">Şehirde-Müstakil</option>
+                             <option value="Şehir-apartman" selected>Şehirde-Apartman</option>
+                             <option value="Kırsal">Kırsalda</option>                            
+                             <option value="Diğer">Diğer</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="density">Ev Yoğunluk Durumu </label>
+                        <br>
+                        <select name="Yoğunluk durumu" id="density">
+                            <option value="Aşırı yoğun ve gürültülü">Aşırı yoğun/Meşgul ve gürültülü</option>
+                            <option value="Meşgul ve gürültülü">Meşgul ve gürültülü</option>
+                            <option value="Kısmen meşgul ve gürültülü" selected>Kısmen meşgul ve gürültülü</option>
+                            <option value="Sakin">Sakin</option>
+                        </select>    
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-posta adresiniz</label>
+                        <br>
+                        <input type="email" name="E-posta adresi" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset class="field">
+                    <legend style="font-size: 20px; font-weight: 900; color: black;">Diğer Hususlar</legend>                   
+                    <div class="input-box">
+                        <label for="exp">Daha önceden evcil hayvanınız oldu mu?</label>
+                        <br>
+                        <input type="radio" name="Daha önceden hayvan besleme durumu" id="feeding"  checked/>
+                        <label for="feeding">Evet</label>
+                        <input type="radio" name="Daha önceden hayvan besleme durumu" id="feeding" />
+                        <label for="feeding">Hayır</label>
+                    </div>
+                    <div class="input-box">
+                        <label for="file">Oldu ise onlarla ilgili resim paylaşırmısınız?</label>
+                        <br>
+                        <input type="file" name="Önceki hayvana ait resimler" id="file" multiple />
+                     
+                    </div>
+                    <div class="input-box">
+                        <label for="choice">Sahiplenmeyi istediğiniz hayvan türlerini seçiniz.</label>
+                        <br>
+                        <div id="choice">
+                            <input type="checkbox" name="İstenilen hayvan türü/türleri" id="kedi" value="kedi" checked />
+                            <label for="kedi">Kedi</label>
+                            <input type="checkbox" name="İstenilen hayvan türü/türleri" id="köpek" value="köpek" />
+                            <label for="köpek">Köpek</label>
+                            <input type="checkbox" name="İstenilen hayvan türü/türleri" id="kuş" value="kuş" />
+                            <label for="kuş">Kuş</label>
+                            <input type="checkbox" name="İstenilen hayvan türü/türleri" id="balık" value="balık" />
+                            <label for="balık">Balık</label>                            
+                        </div> 
+                        <br>                       
+                    </div>
+                    <div>
+                        <label for="search">Almak istediğiniz hayvan türü için arama yapınız</label>
+                        <br>
+                        <input type="search" name="araştırma" id="search" placeholder="Hayvan türünü giriniz"/>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="reason">Neden bir evcil hayvan sahiplenmek istiyorsunuz?</label>
+                        <br>
+                        <textarea name="Sahiplenme nedenleri" id="reason" cols="40" rows="5" placeholder="Düşünce ve sebeplerinizi bizimle paylaşır mısınız..."></textarea>
+                    </div>
+                </fieldset>
+                <br>
+                <div class="submit">
+                    <button type="reset" id="form-button" >SEÇİMLERİ KALDIR</button>
+                    <br><br>
+                    <button type="submit" id="form-button" >GÖNDER</button>
+                </div>  
+            </form> 
+        </section>      
+                    
+    </div>
+</body>
+</html>

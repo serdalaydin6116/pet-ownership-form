@@ -1,0 +1,79 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+
+}
+body{
+    background-image: url(./application_form/images/fon.jpg); 
+    color: black;
+
+}
+#container{
+    max-width: 1740px;
+    /* height: 1036px; */
+    background-color: rgba(0, 0, 255, 0.3);
+    margin: auto;
+    margin-top: 0px;
+}
+#title{
+    font-size: 2.4rem;
+    color: white;
+    font-family: 'Bowlby One SC', cursive;
+    letter-spacing: 0.05em;
+}
+span{
+    color: red;
+}
+#description{
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 2rem;
+    color: black;
+    text-decoration: double;
+    /* padding-bottom: 10px; */
+    
+}
+#header{
+    text-align: center;
+}
+textarea{
+    resize: none;
+}
+#survey_form_container{
+    width: 500px;
+    background-color: rgba(0, 255, 0, 0.438);
+    margin: auto;
+    padding: 10px 10px;
+}
+#name, #surname, #age, #gender-1, #child, #salary, #adres, #phone, #house, #type, #density, #email, #feeding, #file, #search, #reason{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+.input-box{
+    margin-top: 10px;
+    
+}
+#form-button{
+    width: 160px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+.submit{
+    margin: auto;
+    width: 160px;
+    
+}
+#form-button:hover{
+    background-color: white;
+    color: black
+}
+.field{
+    background-color: burlywood;
+    border: 5px solid darkblue
+}
